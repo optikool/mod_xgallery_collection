@@ -1,5 +1,10 @@
 @CHARSET "ISO-8859-1";
-.xgallery-collection {}
+.image-tags ul.tags {
+    float: right;
+}
+
+
+/* .xgallery-collection {}
 
 .xgallery-collection ul {
 	margin: 0 !important;
@@ -17,10 +22,7 @@
 	margin:10px 0;
 	text-align:center;
 }
-.image-coll-clear {clear:both;}
-
-
-
+.image-coll-clear {clear:both;} */
 
 
 /*

@@ -31,4 +31,8 @@ $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 $layout = $params->get('layout', 'default');
 $layouts = explode(':', $layout);
 
+if($params->get('show_css')) {
+    $list->addStyleSheet();
+}   
+
 require JModuleHelper::getLayoutPath('mod_xgallery_collection', $layout);

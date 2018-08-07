@@ -53,8 +53,18 @@ if($collCount > 0) {
 			<?php } ?>
 	
 			<?php if($params->get('show_submitter')) {?>
-			<li class="image-hits">
+			<li class="image-submitter">
 				<strong><?php echo JTEXT::_('MOD_XGALLERY_COLLECTION_SUBMITTER'); ?>:</strong> <?php echo $collInfo->submitter; ?>
+			</li>
+			<?php } ?>
+			<?php if($params->get('show_tags')) {?>
+			<li class="image-tags">
+				<?php
+				$collInfo->tags = new JHelperTags;
+				$collInfo->tags->getItemTags('com_xgallery.collection' , $collInfo->id);
+				$collInfo->tagLayout = new JLayoutFile('joomla.content.tags');
+				?>
+				<strong><?php echo JTEXT::_('MOD_XGALLERY_COLLECTION_TAGS'); ?>:</strong> <?php echo $collInfo->tagLayout->render($collInfo->tags->itemTags); ?>
 			</li>
 			<?php } ?>
 		</ul>

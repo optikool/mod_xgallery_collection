@@ -81,11 +81,19 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				<field name="show_tags" class="btn-group" type="radio" default="0" label="MOD_XGALLERY_COLLECTION_SHOW_TAGS" description="MOD_XGALLERY_COLLECTION_SHOW_TAGS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 				<field name="show_submitter" class="btn-group" type="radio" default="0" label="MOD_XGALLERY_COLLECTION_SHOW_SUBMITTER" description="MOD_XGALLERY_COLLECTION_SHOW_SUBMITTER_DESC">
                 	<option value="1">JYES</option>
                 	<option value="0">JNO</option>
                 </field>
 				<field name="group_images" class="btn-group" type="radio" default="1" label="MOD_XGALLERY_COLLECTION_GROUP_IMAGES" description="MOD_XGALLERY_COLLECTION_GROUP_IMAGES_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_css" class="btn-group" type="radio" default="1" label="MOD_XGALLERY_COLLECTION_LOAD_CSS" description="MOD_XGALLERY_COLLECTION_LOAD_CSS_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>			    

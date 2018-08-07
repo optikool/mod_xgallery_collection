@@ -258,9 +258,9 @@ class modXGalleryCollectionHelper {
 		return $displayImages;
 	}
 
-	public function getTags() {
-		$this->_item->tags = new JHelperTags;
-        $this->_item->tags->getItemTags('com_xgallery.collection' , $this->_item->id);
+	public function addStyleSheet() {
+		$document = JFactory::getDocument();
+		$document->addStyleSheet(JURI::root(true).'/modules/mod_xgallery_collection/css/style.css');
 	}
 		
 	private function _buildQuery() {
